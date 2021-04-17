@@ -1,1 +1,6 @@
-Hi
+<LeafletMap
+  class="h-full"
+  @lat={{this.model.lat}} @lng={{this.model.lng}} @zoom={{this.model.zoom}} as |layers|
+>
+  <layers.tile @url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png"/>
+</LeafletMap>
