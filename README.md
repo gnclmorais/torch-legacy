@@ -2,8 +2,7 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/9d33dc2f-8cf7-4613-a828-34dd56f2fc2e/deploy-status)](https://app.netlify.com/sites/torch-map/deploys)
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Empower everyone to run their own self-host map of interesting places.
 
 ## Prerequisites
 
