@@ -8,10 +8,10 @@ module.exports = function (defaults) {
       compile: {
         plugins: [
           require('tailwindcss')('./tailwind.config.js'),
-          require('autoprefixer')
-        ]
+          require('autoprefixer'),
+        ],
       },
-    }
+    },
   });
 
   // Use `app.import` to add additional libraries to the generated
