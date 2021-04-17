@@ -1,0 +1,12 @@
+<LeafletMap
+  class="h-full"
+  @lat={{this.model.lat}}
+  @lng={{this.model.lng}}
+  @zoom={{this.model.zoom}}
+  @onLoad={{this.model.initMap}}
+  as |layers|
+>
+  <layers.tile @url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png"/>
+</LeafletMap>
+
+<input type="text" class="absolute top-0 left-0 z-1000 rounded-sm border border-indigo-700 m-5 py-1 px-2 shadow-md" />
