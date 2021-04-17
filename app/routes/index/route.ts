@@ -1,4 +1,5 @@
 import Route from '@ember/routing/route';
+import * as L from 'leaflet';
 
 export default class RoutesHome extends Route.extend({
   // anything which *must* be merged to prototype here
@@ -7,7 +8,10 @@ export default class RoutesHome extends Route.extend({
     return {
       lat: 51.5074,
       lng: 0.1277,
-      zoom: 10
+      zoom: 10,
+      initMap: ({ target: map }: { target: L.Map }) => {
+        map.zoomControl.setPosition('bottomright');
+      }
     }
   }
 }
